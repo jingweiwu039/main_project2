@@ -1,0 +1,307 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	
+}
+
+body {
+	/*background: url('https://www.antimaximalist.com/wp-content/uploads/2020/01/Extreme-Minimalism-Can-It-Make-You-Happy.jpg') no-repeat center center fixed;*/
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+
+.container {
+	font-family: 'Baskervville', serif;
+	font-size: 12pt;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	padding-left: 15%;
+	padding-top: 22vh;
+
+}
+
+body .homepage-img {
+	background:url('https://nodaheights.com/wp-content/uploads/2017/08/Furniture-Background-Image.jpg') no-repeat center center;')
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+}
+/* NAVBAR */
+
+nav {
+
+	padding: 0;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+.nav-items-wrapper {
+	display: inline-block;
+	font-size: 1.1em;
+	text-align: center;
+	margin-top: 0.4em;
+	margin-right: 0.6em;
+
+}
+
+.logo {
+	
+	color: black;
+	display: inline-block;
+	margin: 0;
+	padding: 5px;
+
+}
+
+.logo a {
+	text-decoration: none;
+	color: black;
+}
+
+nav .nav-items {
+	font-size: 120%;
+	display: inline-block;
+}
+
+nav ul {
+	padding: 0;
+}
+
+nav li {
+	margin-left: 4em;
+	margin: 0 2em;
+}
+
+nav li>a {
+	text-decoration: none;
+	color: black;
+}
+
+nav li>a:hover {
+	border-bottom: 1px solid grey;
+}
+
+
+/* HOMEPAGE */
+.categories,
+.categories-img {
+	display: block;
+}
+
+.categories-img {
+	width: 90%;
+	margin: auto;
+	margin-top:;
+	margin-bottom: 7em;
+	
+	
+}
+
+/* SLOGAN */
+.slogan {
+	width: 25%;
+}
+
+
+.main_slogan {
+	font-family:'Kumbh Sans', sans-serif;
+	font-size: 80pt;
+	margin-left: 2%;
+	margin-bottom:8%;
+	text-align: center;
+}
+
+.slogan p{
+	font-size: 12pt;
+	font-family: 'Baskervville', serif;
+}
+
+.motto {
+	text-align: center;
+	width: 60%;
+	margin: auto;
+	padding: 0.5em;
+}
+
+.motto h1 {
+	font-size: 3.3em;
+	margin: 0.2em;
+	letter-spacing: 0.1em;
+}
+.motto p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	line-height: 2;
+	margin-top: 0;
+}
+
+
+/* Figures */
+.figure figcaption {
+
+	font-family: 'Baskervville', serif;
+}
+/* Product item */
+#container {
+	display: flex;
+	background-color: #efeee9;
+}
+
+#container-product-detail {
+	display: flex;
+	background: var(--color-off-white);
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+
+#item-picture {
+	width: 80%;
+	margin-top:6em;
+}
+
+.space {
+	height: 5em;
+	background: #CCC;
+
+
+}
+
+.product-detail {
+	max-width: 100em;
+
+}
+.item-picture-section {
+	
+	width:55%;
+	margin-left: 4em;
+	margin-top: 2em;
+	margin-right: 2em;
+}
+
+.item-description-section {
+	margin-top: 5em; 
+	display:inline-block;
+	width: 50%;
+}
+
+.detail-description {
+	width: 70%;
+	margin: auto;
+	margin-top:7em;
+	justify-content: center;
+	
+}
+
+
+.detail-features {
+	width: 70%;
+	margin: auto;
+	margin-top: 7em;
+	margin-bottom: 7em;
+	justify-content: center;
+
+}
+
+/*Item Details */
+.item-title {
+	font-size: 2em;
+	font-family: var(--font-sans);
+	color: black;
+	margin-top: 12vh;
+	margin-bottom: 8vh;
+	
+}
+
+.price {
+	font-size: 1.2em;
+	font-family: var(--font-sans);
+	color: black;
+	
+
+}
+
+.description {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9em;
+	font-weight: 300;
+	text-align: left;
+	line-height: 1.5;
+	margin-top: 7.5vh;
+	margin-bottom: 8vh;
+	margin-right: 6em;
+	letter-spacing: 0.02em;
+
+}
+
+.detail-detail {
+	text-align: center;
+	letter-spacing: 0.2em;
+	margin: 4em;
+	margin-bottom: 3em;
+}
+
+.detail-h3 {
+	text-align: center;
+	letter-spacing: 0.2em;
+	font-weight: 400;
+
+}
+
+.detail-h3,
+.detail-p {
+	font-family:'Montserrat', sans-serif;
+	font-size: 0.9em;
+	
+}
+
+/* Button */
+.product-button-add {
+	margin-top: 2em;
+	text-align: left;
+}
+
+.explore-button {
+	margin: auto;
+}
+
+/* CART */
+#cart-img {
+
+	width: 20px;
+	margin-top:6em;
+
+
+}
+
+/* FOOTER */
+
+footer {
+	font-family: 'Baskervville', serif;
+	color: black;
+	font-size: 0.8em;
+	margin: 0;
+	text-align: center;
+	height: 4vh;
+	padding: 4vh 10%;
+	bottom: 0;
+	width: 100%;
+	position: relative;
+}

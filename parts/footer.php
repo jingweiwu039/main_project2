@@ -1,0 +1,1 @@
+<footer class="footer">© 2020 Jingwei. All rights reserved.</footer>
