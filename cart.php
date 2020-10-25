@@ -11,7 +11,7 @@
 
 	<section class="container">
 		<div class="motto">
-			<h1>YOUR CART</h1>
+			<h1>YOUR CART </h1>
 		</div>
 		<div class="hr">
 			<hr style="height:2px;border-width:0;background-color:#e8e7e3">
