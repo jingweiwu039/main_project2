@@ -38,12 +38,12 @@
 			<div class="grid gap">
 				<div class="col-xs-12 col-sm-3">
 					<figure class="figure product-overlay">
-						<a href="product_list.php">
+						
 							<img src="img/accent_chair.jpg">
-						</a>
+					
 						<figcaption>
 							<div class="caption-body">
-								<div>FURNITURE</div>
+								<a class="homepage-a" href="product_list.php"><div>FURNITURE</div></a>
 								
 							</div>
 						</figcaption>
@@ -51,10 +51,10 @@
 				</div>
 				<div class="col-xs-12 col-sm-3">
 					<figure class="figure product-overlay">
-						<a href="product_list.php"><img src="img/lighting.jpeg" alt=""></a>
+						<img src="img/lighting.jpeg" alt="">
 						<figcaption>
 							<div class="caption-body">
-								<div>LIGHTING</div>
+								<a class="homepage-a" href="product_list.php"><div>LIGHTING</div></a>
 	
 							</div>
 						</figcaption>
@@ -62,10 +62,10 @@
 				</div>
 				<div class="col-xs-12 col-sm-3">
 					<figure class="figure product-overlay">
-						<a href="product_list.php"><img src="img/accessories.jpeg" alt=""></a>
+						<img src="img/accessories.jpeg" alt="">
 						<figcaption>
 							<div class="caption-body">
-								<div>ACCESSORIES</div>
+								<a class="homepage-a" href="product_list.php"><div>ACCESSORIES</div></a>
 								
 							</div>
 						</figcaption>
@@ -73,10 +73,10 @@
 				</div>	
 				<div class="col-xs-12 col-sm-3">
 					<figure class="figure product-overlay">
-						<a href="product_list.php"><img src="img/1.jpg" alt=""></a>
+						<img src="img/1.jpg" alt="">
 						<figcaption>
 							<div class="caption-body">
-								<div>OUTDOOR</div>
+								<a class="homepage-a" href="product_list.php"><div>OUTDOOR</div></a>
 							</div>
 						</figcaption>
 					</figure>
