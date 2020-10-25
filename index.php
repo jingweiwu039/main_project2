@@ -29,6 +29,27 @@
 		</div>		
 	</div>
 
+ <?php
+  class Category {
+    public $title;
+    public $image_path;
+    public $link;
+    public function __construct(string $title, string $image_path, string $link) {
+      $this->title = $title;
+      $this->image_path = $image_path;
+      $this->link = $link;
+    }
+  }
+
+  $categories = [
+    new Category("FURNITURE", "img/accent_chair.jpg", "product_list.php"),
+    new Category("LIGHTING", "img/lighting.jpeg", "product_list.php"),
+    new Category("ACCESSORIES", "img/accessories.jpeg", "product_list.php"),
+    new Category("OUTDOOR", "img/1.jpg", "product_list.php"),
+  ];
+  ?>
+
+
 	<div id="container-categories-detail">
 		<section class="categories">
 			<h1 class="detail-detail">CATEGORIES</h1>
@@ -36,57 +57,20 @@
 
 		<section class="categories-img">
 			<div class="grid gap">
-				<div class="col-xs-12 col-sm-3">
+		<?php foreach($categories as $category): ?>
+				<div class="col-xs-12 col-sm-3" onclick="window.location='<?= $category->link ?>'">
 					<figure class="figure product-overlay">
 						
-							<img src="img/accent_chair.jpg">
+							<img src="<?= $category->image_path ?>">
 					
 						<figcaption>
-							<div class="caption-body">
-								<a class="homepage-a" href="product_list.php"><div>FURNITURE</div></a>
-								
-							</div>
+							<div class="caption-body"><?= $category->title ?></div>			
 						</figcaption>
 					</figure>
 				</div>
-				<div class="col-xs-12 col-sm-3">
-					<figure class="figure product-overlay">
-						<img src="img/lighting.jpeg" alt="">
-						<figcaption>
-							<div class="caption-body">
-								<a class="homepage-a" href="product_list.php"><div>LIGHTING</div></a>
-	
-							</div>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="col-xs-12 col-sm-3">
-					<figure class="figure product-overlay">
-						<img src="img/accessories.jpeg" alt="">
-						<figcaption>
-							<div class="caption-body">
-								<a class="homepage-a" href="product_list.php"><div>ACCESSORIES</div></a>
-								
-							</div>
-						</figcaption>
-					</figure>
-				</div>	
-				<div class="col-xs-12 col-sm-3">
-					<figure class="figure product-overlay">
-						<img src="img/1.jpg" alt="">
-						<figcaption>
-							<div class="caption-body">
-								<a class="homepage-a" href="product_list.php"><div>OUTDOOR</div></a>
-							</div>
-						</figcaption>
-					</figure>
-				</div>			
+		<?php endforeach; ?>
 			</div>
-		</div>
-			
-	    </section>
-
-    </div>
+		</section>
 
 	<?php include "parts/footer.php"; ?>
 
