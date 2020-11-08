@@ -89,7 +89,7 @@ a:hover {
 .display-block {display: block;}
 .display-inline-block {display: inline-block;}
 
-.flex-stretch {flex: 1,1,auto;}
+.flex-stretch {flex: 1 1 auto;}
 .flex-none {flex: none;}
 
 .flex-align-center {align-items: center;}

@@ -1,34 +1,58 @@
 [
-	{
-		"name":"Alice Alica",
-		"type": "Student",
-		"email": "aalica@pwa.edu.com",
-		"classes":[608, 605]
-	},
-	{
-		"name":"Bob Bep",
-		"type": "Senior Student",
-		"email": "bebop@gmail.com",
-		"classes":[605]
-	},
-	{
-		"name":"John Lilih",
-		"type": "Student",
-		"email": "jlil@gmail.com",
-		"classes":[666, 777]
-	},
-	{
-		"name":"Phoebe Buffay",
-		"type": "Singer",
-		"email": "Phoebe@gmail.com",
-		"classes":[601,608,617,777]
-	},
-	{
-		"name":"Chandler Bing",
-		"type": "Chef",
-		"email": "bingcdr@yahoo.com",
-		"classes":[601,608,617,777]
-	}
+    {
+        "name": "Alice Alica",
+        "type": "Student",
+        "email": "aalica@pwa.edu.com",
+        "classes": [
+            608,
+            605
+        ]
+    },
+    {
+        "name": "Bob Bep",
+        "type": "Senior Student",
+        "email": "bebop@gmail.com",
+        "classes": [
+            605
+        ]
+    },
+    {
+        "name": "John Lilih",
+        "type": "Student",
+        "email": "jlil@gmail.com",
+        "classes": [
+            666,
+            777
+        ]
+    },
+    {
+        "name": "Phoebe Buffay",
+        "type": "Singer",
+        "email": "Phoebe@gmail.com",
+        "classes": [
+            601,
+            608,
+            617,
+            777
+        ]
+    },
+    {
+        "name": "Chandler Bing",
+        "type": "Chef",
+        "email": "bingcdr@yahoo.com",
+        "classes": [
+            601,
+            608,
+            617,
+            777
+        ]
+    },
+    {
+        "name": "Test",
+        "type": "Test",
+        "email": "Test",
+        "classes": [
+            "Test"
+        ]
+    }
 ]
-
-
