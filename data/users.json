@@ -1,23 +1,34 @@
 [
 	{
-        "id": 1000,
 		"name":"Alice Alica",
 		"type": "Student",
 		"email": "aalica@pwa.edu.com",
-		"classes": ["608", "605"]
+		"classes":[608, 605]
 	},
 	{
-        "id": 1001,
 		"name":"Bob Bep",
 		"type": "Senior Student",
 		"email": "bebop@gmail.com",
-		"classes": ["605"]
+		"classes":[605]
 	},
 	{
-        "id": 1002,
 		"name":"John Lilih",
-		"type": "tudent",
+		"type": "Student",
 		"email": "jlil@gmail.com",
-		"classes": ["666", "777"]
+		"classes":[666, 777]
+	},
+	{
+		"name":"Phoebe Buffay",
+		"type": "Singer",
+		"email": "Phoebe@gmail.com",
+		"classes":[601,608,617,777]
+	},
+	{
+		"name":"Chandler Bing",
+		"type": "Chef",
+		"email": "bingcdr@yahoo.com",
+		"classes":[601,608,617,777]
 	}
 ]
+
+

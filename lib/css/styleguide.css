@@ -117,7 +117,8 @@ a:hover {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
-	font-family: var(--font-sans);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
 
 	
 }
@@ -145,6 +146,24 @@ a:hover {
 	display: inline-block;
 
 }
+
+/*.navbar.styleguide {
+
+	line-height: var(--header-height);
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.navbar.styleguide a {
+	color:inherit;
+	font-weight: 500;
+}
+
+.navbar.styleguide a:hover {
+	color: #6a9478;
+	background-color: var(--color-black);
+}*/
 
 
 
@@ -228,6 +247,30 @@ a:hover {
 .nav-material .active a::after {
 	height: 4px;
 }
+
+
+.user-nav ul{
+	list-style-type: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-decoration: none;
+	
+}
+
+
+.user-nav ul a{
+	color: inherit;
+	text-decoration: none;
+
+}
+
+.user-nav ul a:hover {
+	color:#6a9478;
+	background-color: transparent;
+}
+
+
+
 
 /* CARD */
 
@@ -431,6 +474,7 @@ a:hover {
 	width: 100%;
 }
 
+
 .form-button-s,
 .form-button {
 	background-color: black;
@@ -446,6 +490,7 @@ a:hover {
 }
 .form-button{
 	width: 50%;
+
 }
 
 .form-button-s {

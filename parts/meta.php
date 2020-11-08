@@ -1,6 +1,8 @@
 	
 	<meta name="viewport" content="width=device-width">
 
+	<base href="http://jingweiwu93.com/aau/wnm_608/main_project2/">
+
 <!-- CSS STYLESHEET-->
 	<link rel="stylesheet" href="lib/css/styleguide.css">
 	<link rel="stylesheet" href="lib/css/gridsystem.css">

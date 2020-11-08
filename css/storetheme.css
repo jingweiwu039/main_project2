@@ -37,6 +37,7 @@ body .homepage-img {
     height: 100%;
 
 }
+
 /* NAVBAR */
 
 nav {
@@ -50,6 +51,7 @@ nav {
 	z-index: 100;
 }
 
+
 .nav-items-wrapper {
 	display: inline-block;
 	font-size: 1.1em;
@@ -58,6 +60,7 @@ nav {
 	margin-right: 0.6em;
 
 }
+
 
 .logo {
 	
