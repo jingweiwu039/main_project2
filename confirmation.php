@@ -11,24 +11,20 @@
 
 	<div class="container">
 
-		
+		<div class="card soft">
 			
 			<div class="motto">
-				<h1>YOUR CART</h1>
+				<h2>Thank you for your purchase</h2>
 			</div>
 			<div class="hr">
 				<hr style="height:2px;border-width:0;background-color:#e8e7e3">
 			</div>
-			<!--<section id="cart-img">
-				<img src="img/13.jpg">
-			</section>-->
-			<div class="form-control checkout-button">
-				<a href="checkout_page.php" class="form-button-s">Checkout</a>
-			</div>
-		
+			<p><a href="product_list.php">Continue Shopping</a></p>
+			
+		</div>	
 	</div>
 	
 	
 	<?php include "parts/footer.php"; ?>
 </body>
-</html>
+</html

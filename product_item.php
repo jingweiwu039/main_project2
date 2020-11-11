@@ -40,8 +40,10 @@
 				</section>
 				
 			</div>
+			<p><a href="added_to_cart.php">Add To Cart</a></p>
 			
 		</div>
+
 
 
 	</div>
