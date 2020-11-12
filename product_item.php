@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+<?php
+
+include_once "lib/php/functions.php";
+$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
+$images = explode(",", $product->images);
+//$image_elements = array_reduce($image,function($r,$o){
+//	return $r."<img src='img/$o'>";
+//});
+
+//$print_p($product);
+
+?><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -8,9 +19,40 @@
 <body>
 	<?php include "parts/navbar.php"; ?>
 
-	<div>
+	<div id="container">
 
-		<div id="container">
+		<div class="space"></div>
+			<section class="item-picture-section col-xs-12 col-md-7">
+				<div>
+					<img id="item-picture" src="img/<?= $product->thumbnail ?>">
+				</div>
+			<!--	<div>
+					<?= $image_elements ?>	
+				</div> -->
+				
+			</section>
+			<section class="item-description-section col-xs-12 col-md-5">
+				
+					
+					<h1 class="item-title"><?= $product->name ?></h1>
+					<p class="description">
+						<?= $product->description ?>
+					</p>
+					<p class="price">&dollar;<?= $product->price ?></p>
+					<div class="product-button-add">
+						<div class="form-control">
+							<a href="added_to_cart.php" class="form-button">ADD TO CART</a>
+			    		</div>		
+					</div>	
+				
+			</section>
+				
+	</div>
+
+
+	<!--	<div id="container">
+
+
 			<div class="space"></div>
 			<section class="item-picture-section">
 				<img id="item-picture" src="img/13.jpg">
@@ -39,8 +81,8 @@
 					<p class="detail-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, odit eveniet neque voluptate aperiam natus dolorem saepe itaque iste perferendis nihil, minima.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, odit eveniet neque voluptate aperiam natus dolorem saepe itaque iste perferendis nihil, minima.</p>
 				</section>
 				
-			</div>
-			<p><a href="added_to_cart.php">Add To Cart</a></p>
+			</div>-->
+			
 			
 		</div>
 
@@ -48,11 +90,11 @@
 
 	</div>
 
-
+<?php include "parts/footer.php"; ?>
 </body>
 </html>
 
 
 
 
-	<?php include "parts/footer.php"; ?>
+	
