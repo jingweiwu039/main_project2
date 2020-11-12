@@ -75,7 +75,7 @@
 	    			<input id="payment-zip" type="text" placeholder="Zip Code" class="form-input">
 	    		</div>
 
-			    <div class="form-control">
+			    <div class="form-control complete-button">
 					<a href="confirmation.php" class="form-button">Complete</a>
 				</div>
 			</form>

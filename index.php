@@ -42,10 +42,10 @@
   }
 
   $categories = [
-    new Category("FURNITURE", "img/accent_chair.jpg", "product_list.php"),
+    new Category("CHAIR", "img/accent_chair.jpg", "product_list.php"),
     new Category("LIGHTING", "img/lighting.jpeg", "product_list.php"),
-    new Category("ACCESSORIES", "img/accessories.jpeg", "product_list.php"),
-    new Category("OUTDOOR", "img/1.jpg", "product_list.php"),
+    new Category("TABLE", "img/accessories.jpeg", "product_list.php"),
+    new Category("SOFA", "img/1.jpg", "product_list.php"),
   ];
   ?>
 

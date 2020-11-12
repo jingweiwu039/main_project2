@@ -21,7 +21,7 @@
 		
 	<div class="container">
 
-		<div class="grid gap">
+	<!--	<div class="grid gap">
 				<div class="col-xs-12 col-sm-4">
 					<figure class="figure">
 						
@@ -105,7 +105,7 @@
 							<div>$1200.00</div>
 						</figcaption>
 					</figure>
-				</div>
+				</div> -->
 
 				<?php
 
@@ -117,14 +117,14 @@
 					"
 					SELECT * 
 					FROM `products`
-					ORDER BY `date_create` DESC
+					ORDER BY `category` 
 					LIMIT 12
 					"
 				);
 
 
 
-				echo array_reduce($result,'productListTemplate');
+				echo "<div class='grid gap'>",array_reduce($result,'productListTemplate'),"</div>";
 
 				?>
 

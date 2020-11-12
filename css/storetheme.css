@@ -124,21 +124,22 @@ nav li>a:hover {
 
 /* SLOGAN */
 .slogan {
-	width: 25%;
+	width: 30%;
 }
 
 
 .main_slogan {
 	font-family:'Kumbh Sans', sans-serif;
 	font-size: 80pt;
-	margin-left: 2%;
+	margin-left: 0;
 	margin-bottom:8%;
 	text-align: center;
 }
 
 .slogan p{
-	font-size: 12pt;
-	font-family: 'Baskervville', serif;
+	font-size: 1em;
+	font-family:'Baskervville',serif;
+	
 }
 
 .motto {
@@ -297,16 +298,44 @@ nav li>a:hover {
 	margin: 0;
 }
 
-.checkout-button {
-	margin: auto;
+.complete-button {
+	display: flex;
+  	justify-content: center;
 }
+
+/* PRODUCT LIST */
+
+.product.figure {
+	border-radius: 0.2em;
+	transition: all 0.3s;
+
+}
+.product.figure:hover {
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-zoom {
+	position: relative;
+	overflow: hidden;
+}
+
+
+.product-zoom img {
+	transform: scale(1,1);
+	transition: all 0.4s;
+}
+
+
+.product-zoom:hover img {
+	transform: scale(1.05,1.05);
+}
+
 
 /* CART */
 #cart-img {
 
 	width: 20px;
 	margin-top:6em;
-
 }
 
 
