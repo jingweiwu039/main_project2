@@ -294,11 +294,11 @@ nav li>a:hover {
 }
 
 .explore-button {
-	margin: auto;
+	margin: 0;
 }
 
 .checkout-button {
-	
+	margin: auto;
 }
 
 /* CART */

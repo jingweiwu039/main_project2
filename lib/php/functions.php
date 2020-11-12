@@ -12,7 +12,7 @@ function file_get_json($filename){
 }
 
 
-include "auth.php";
+include_once "auth.php";
 function makeConn() {
 	$conn = new mysqli(...MYSQLIAuth());
 	if($conn->connect_errno) die($connect_error);

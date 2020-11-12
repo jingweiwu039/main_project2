@@ -109,11 +109,22 @@
 
 				<?php
 
-				include "lib/php/functions.php";
+				include_once "lib/php/functions.php";
+				include_once "parts/templates.php";
 
-				$result = makeQuery(makeConn(),"SELECT * FROM `products`");
-				
-				print_p($result);
+				$result = makeQuery(
+					makeConn(),
+					"
+					SELECT * 
+					FROM `products`
+					ORDER BY `date_create` DESC
+					LIMIT 12
+					"
+				);
+
+
+
+				echo array_reduce($result,'productListTemplate');
 
 				?>
 
