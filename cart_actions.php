@@ -7,12 +7,12 @@ include_once "lib/php/functions.php";
 switch($_GET['action']) {
 	case "add-to-cart":
 		$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_POST['product-id'])[0];
-		addToCart($_POST['product-id'],$_POST['product-amount']);
+		addToCart($_POST['product-id'],$_POST['product-quantity'],$_POST['product-color']);
 		header("location:added_to_cart.php?id={$_POST['product-id']}");
 		break;
 	case "update-cart-item":
 		$p = cartItemById($_POST['id']);
-		$p->amount = $_POST['amount'];
+		$p->quantity = $_POST['quantity'];
 		header("location:cart.php");
 		break;
 	case "delete-cart-item":
@@ -27,26 +27,4 @@ switch($_GET['action']) {
 }
 
 
-print_p([$_GET,$_POST,$_SESSION]);
-
-
-
-switch($_GET['action']){
-	case "add-to-cart":
-		$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_POST['product-id'])[0];
-		addToCart($_POST['product-id'],$_POST['product-amount']);
-		//header("location:{$_SERVER['PHP_SELF']}");
-		break;
-	case "update-cart-item":
-		//header("location:{$_SERVER['PHP_SELF']}");
-		break;
-	case "delete-cart-item":
-		//header("location:{$_SERVER['PHP_SELF']}");
-		break;
-	case "reset-cart":
-		resetCart();
-	default:
-		die("incorrect Action");
-			
-}
 print_p([$_GET,$_POST,$_SESSION]);

@@ -2,7 +2,9 @@
 
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
-$cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (3,6,8)");
+//$cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (3,6,8)");
+
+$cart_items = getCartItems();
 
 ?><!DOCTYPE html>
 <html>
@@ -34,43 +36,9 @@ $cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (3,6,8)");
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-12">
 					<div class="card soft">
-						<?= array_reduce($cart,'cartListTemplate') ?>	
+						<?= array_reduce($cart_items,'cartListTemplate') ?>	
 						
-						<br>
-						<div class="detail-p">
-							<div class="display-flex">
-								<div class="flex-stretch">Subtotal</div>
-								<div class="flex-none">$1340.00</div>
-							</div>
-							<br>
-							<div class="display-flex">
-								<div class="flex-stretch">Shipping</div>
-								<div class="flex-none">$100.00</div>
-							</div>
-							<br>
-							<div class="display-flex">
-								<div class="flex-stretch">Taxes</div>
-								<div class="flex-none">$120.00</div>
-							</div>
-							<hr style="height:1px;border-width:0;background-color:#e8e7e3;margin-top: 2vh;">
-							<br>
-							
-
-							<div class="detail-p-total display-flex">
-								<div class="flex-stretch">Subtotal</div>
-								<div class="flex-none">$1560.00</div>
-							</div>
-							<hr style="height:2px;border-width:0;background-color:#e8e7e3;margin-top: 2vh">
-
-
-						</div>
-						<div class="col-xs-12 col-md-7 display-flex" style="flex-direction:row-reverse;">
-							<div class="form-control">
-								<a href="checkout_page.php" class="form-button-s">CHECKOUT</a>
-							</div>
-					
-						</div>
-					
+						<br>			
 					</div>
 
 				</div>	

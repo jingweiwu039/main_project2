@@ -57,11 +57,9 @@ $images = explode(",", $product->images);
 							</div>
 						</div>
 
-						<div class="product-button-add">
-							<div class="form-control">
-								<input type="submit" class="form-button" value="Add to cart">
-				    		</div>		
-						</div>		
+						<div class="form-control">
+							<input type="submit" class="form-button" value="ADD TO CART">
+						</div>
 				</section>
 			</form>			
 	</div>

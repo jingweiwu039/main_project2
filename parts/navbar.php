@@ -14,10 +14,9 @@ include_once "lib/php/functions.php";
 				<li><a href="about_us.php">About Us</a></li>
 			    <li><a href="contact.php">Contact</a></li> 
 				<li><a href="cart.php">
-					<span>Cart</span>
-					<span class="badge"><?= makeCartBadge(); ?></span>
-
-				</a></li>
+		  			<span>Cart</span>
+		  			<span class="badge"><?= makeCartBadge(); ?></span>
+		  		</a></li>
 			</ul>
 		</div>
 	</ul>				

@@ -74,7 +74,20 @@ function makeCartBadge() {
 }
 
 
+function getCartItems() {
+	$cart = getCart();
+	if(empty($cart)) return [];
 
+	$ids = implode(",",array_map(function($o){return $o->id;},$cart));
+	$data = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN ($ids)");
+
+	return array_map(function($o) use ($cart) {
+		$p = cartItemById($o->id);
+		$o->quantity = $p->quantity;
+		$o->total = $p->quantity * $o->price;
+		return $o;
+	},$data);
+}
 
 
 

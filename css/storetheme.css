@@ -348,11 +348,18 @@ nav li>a:hover {
 	margin-bottom: 4em;
 }
 
-span.badge::after {
+/*span.badge::after {
 	content: ')';
 }
 
 span.badge::before {
+	content: '(';
+}*/
+
+span.badge:not(:empty)::after {
+	content: ')';
+}
+span.badge:not(:empty)::before {
 	content: '(';
 }
 
