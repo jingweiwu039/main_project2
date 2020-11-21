@@ -33,7 +33,7 @@ $cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (3,6,8)");
 			</section>-->
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-12">
-					
+					<div class="card soft">
 						<?= array_reduce($cart,'cartListTemplate') ?>	
 						
 						<br>
@@ -45,12 +45,12 @@ $cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (3,6,8)");
 							<br>
 							<div class="display-flex">
 								<div class="flex-stretch">Shipping</div>
-								<div class="flex-none">$100</div>
+								<div class="flex-none">$100.00</div>
 							</div>
 							<br>
 							<div class="display-flex">
 								<div class="flex-stretch">Taxes</div>
-								<div class="flex-none">$120</div>
+								<div class="flex-none">$120.00</div>
 							</div>
 							<hr style="height:1px;border-width:0;background-color:#e8e7e3;margin-top: 2vh;">
 							<br>
@@ -64,19 +64,21 @@ $cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (3,6,8)");
 
 
 						</div>
+						<div class="col-xs-12 col-md-7 display-flex" style="flex-direction:row-reverse;">
+							<div class="form-control">
+								<a href="checkout_page.php" class="form-button-s">CHECKOUT</a>
+							</div>
+					
+						</div>
+					
+					</div>
 
 				</div>	
 			</div>
 
 		
 
-			<div class="col-xs-12 col-md-7 display-flex">
-					<div class="flex-stretch form-control checkout-button" style="margin-top: 0;">
-						<a href="checkout_page.php" class="form-button-s checkout-button">CHECKOUT</a>
-					</div>
 			
-				</div>
-			</div>
 		
 
 

@@ -7,7 +7,7 @@ $images = explode(",", $product->images);
 //	return $r."<img src='img/$o'>";
 //});
 
-//$print_p($product);
+//print_p($_SESSION);
 
 ?><!DOCTYPE html>
 <html>
@@ -22,31 +22,48 @@ $images = explode(",", $product->images);
 	<div id="container">
 
 		<div class="space"></div>
-			<section class="item-picture-section col-xs-12 col-md-7">
-				<div>
-					<img id="item-picture" src="img/<?= $product->thumbnail ?>">
-				</div>
-			<!--	<div>
-					<?= $image_elements ?>	
-				</div> -->
-				
-			</section>
-			<section class="item-description-section col-xs-12 col-md-5">
-				
+			<form action="cart_actions.php?action=add-to-cart" method="POST">
+
+				<input type="hidden" name="product-id" value="<?= $product->id ?>">
+				<section class="item-picture-section col-xs-12 col-md-6">
+					<div>
+						<img id="item-picture" src="img/<?= $product->thumbnail ?>">
+					</div>
+				<!--	<div>
+						<?= $image_elements ?>	
+					</div> -->
 					
-					<h1 class="item-title"><?= $product->name ?></h1>
-					<p class="description">
-						<?= $product->description ?>
-					</p>
-					<p class="price">&dollar;<?= $product->price ?></p>
-					<div class="product-button-add">
-						<div class="form-control">
-							<a href="added_to_cart.php?id=<?= $product->id ?>" class="form-button">ADD TO BAG</a>
-			    		</div>		
-					</div>	
-				
-			</section>
-				
+				</section>
+				<section class="item-description-section col-xs-12 col-md-6">
+					
+						
+						<h1 class="item-title"><?= $product->name ?></h1>
+						<p class="description">
+							<?= $product->description ?>
+						</p>
+						<p class="price">&dollar;<?= $product->price ?></p>
+
+						<div class="display-inline-block">
+					    	<label for="product-quantity" class="form-label">Quantity</label>
+							<div class="form-select quantity">
+								<select id="product-quantity" name="product-quantity">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="product-button-add">
+							<div class="form-control">
+								<input type="submit" class="form-button" value="Add to cart">
+				    		</div>		
+						</div>		
+				</section>
+			</form>			
 	</div>
 	<div id="container-product-detail">
 			<div class="product-detail">

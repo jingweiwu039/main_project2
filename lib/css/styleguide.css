@@ -440,8 +440,6 @@ a:hover {
 .form-select,
 .hotdog input,
 .hotdog,
-.form-button,
-.form-button-s,
 .form-input,
 .form-item {
 	display: inline-block;
@@ -449,11 +447,13 @@ a:hover {
 	border-width: 0;
 	font-family: "Kumbh Sans", sans-serif;
 	--webkit-appearance: none;
-	color: white;
+	color: black;
 	width: 100%;
 	outline: 0;
 
 }
+
+
 
 .form-input {
 	font-size: 0.9em;
@@ -487,7 +487,8 @@ a:hover {
 	display: inline-block;
 	border-width: 0;
 	font-size: 0.75em;	
-	
+	color:white;
+	font-family: "Kumbh Sans", sans-serif;
 	
 }
 .form-button{
@@ -495,9 +496,9 @@ a:hover {
 
 }
 
-.form-button-s {
+/*.form-button-s {
 	width: 20%;
-}
+}*/
 
 a.form-button,
 a.form-button-s {

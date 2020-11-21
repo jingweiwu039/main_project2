@@ -23,7 +23,7 @@
 				   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
 				</p>
 			</div>
-			<div class="form-control explore-button">
+			<div class="form-control explore-button" style="max-width:20em">
 				<a href="product_list.php" class="form-button-s">EXPLORE</a>
 			</div>
 		</div>		

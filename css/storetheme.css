@@ -308,10 +308,7 @@ nav li>a:hover {
   	justify-content: center;
 }
 
-.checkout-button {
-	float:right;
 
-}
 
 
 /* PRODUCT LIST */
@@ -341,6 +338,23 @@ nav li>a:hover {
 	transform: scale(1.05,1.05);
 }
 
+/* Added To Cart */
+
+.confirmation {
+	display: block;
+	align-items: center;
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+span.badge::after {
+	content: ')';
+}
+
+span.badge::before {
+	content: '(';
+}
 
 /* CART */
 #cart-img {

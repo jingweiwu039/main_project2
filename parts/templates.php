@@ -26,7 +26,7 @@ return $r.<<<HTML
 		<div class="detail-p-total">$o->name</div>
 		<a>Delete</a>
 	</div>
-	 <div class="quantity buttons_added">
+	 <div class="quantity buttons_added display-flex" style="align-items: center; flex-direction:row; display:flex; margin-right:2em">
 		<input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
 	</div>
 	
