@@ -392,7 +392,27 @@ h3,
 
 /* -- quantity box -- */
 
-.quantity {
+.form-select.quantity>select {
+	padding: 0.5em 1.3em;
+	border: 1px solid var(--color-neutral-medium);
+	border-radius: 0.3em;
+	cursor: pointer;
+	color: black;
+}
+
+.form-select.quantity::after {
+	content: '▾';
+	font-family: Raleway,sans-serif;
+	font-size: 1em;
+	color: black;
+	position: absolute;
+	top: 50%;
+	right: 0.5em;
+	transform: translateY(-50%);
+	pointer-events: none;
+	border: none;
+}
+/*.quantity {
  display: inline-block; }
 
 .quantity .input-text.qty {
@@ -444,7 +464,7 @@ h3,
  .quantity.buttons_added .minus:focus,
 .quantity.buttons_added .plus:focus {
  outline: none; }
-
+*/
 
 /* FOOTER */
 

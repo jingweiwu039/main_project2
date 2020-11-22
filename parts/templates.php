@@ -15,6 +15,16 @@ return $r.<<<HTML
 HTML;
 }
 
+function selectQuantity ($quantity=1,$total=6) {
+	$output = "<select name='quantity'>";
+	for($i=1;$i<=$total;$i++) {
+		$output .= "<option ".($i==$quantity?"selected":"").">$i</option>";
+	}
+	$output .= "</select>";
+	return $output;
+}
+
+
 
 function cartListTemplate($r,$o){
 $totalfixed = number_format($o->total,2,'.','');
@@ -24,16 +34,27 @@ return $r.<<<HTML
 	<div class="flex-none images-thumbs">
 		<img src="img/$o->thumbnail">
 	</div>
-	<div class="flex-stretch cart-name detail-p">
+	<div class="flex-stretch">
 		<div class="detail-p-total">$o->name</div>
-		<div>Delete</div>
+		<form action="cart_actions.php?action=delete-cart-item" method="post">
+			<input type="hidden" name="id" value="$o->id">
+			<input type="submit" class="btn delete" value="Delete" style="font-size: 0.9em">
+		</form>
 	</div>
-	 <div class="quantity buttons_added display-flex" style="align-items: center; flex-direction:row; display:flex; margin-right:2em">
-		<input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
-	</div>
+	<!-- <div class="quantity buttons_added display-flex" style="align-items: center; flex-direction:row; display:flex; margin-right:2em">
+		<input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="$o->quantity" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+	</div>-->
 	
-	<div class="flex-none cart-name detail-p-total">
-		&dollar;$totalfixed
+	<div class="flex-none">
+		<div class="cart-name detail-p-total">
+			&dollar;$totalfixed
+		</div>
+		<form action="cart_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
+			<input type="hidden" name="id" value="$o->id">
+				<div class="form-select">
+					$selectquantity
+				</div>	
+		</form>		
 	</div>
 </div>
 <hr style="height:1px;border-width:0;background-color:#e8e7e3;margin-top: 15px;margin-bottom: 17px;">

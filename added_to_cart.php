@@ -2,6 +2,7 @@
 
 include_once "lib/php/functions.php";
 
+session_start();
 
 $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 $cart_product = cartItemById($_GET['id']);

@@ -2,8 +2,10 @@
 
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
-//$cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (3,6,8)");
 
+session_start();
+
+//$cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (3,6,8)");
 $cart_items = getCartItems();
 
 ?><!DOCTYPE html>
@@ -43,6 +45,7 @@ $cart_items = getCartItems();
 
 				</div>	
 			</div>
+			<?= cartTotals(); ?>
 
 		
 

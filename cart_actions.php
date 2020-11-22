@@ -3,11 +3,12 @@
 
 include_once "lib/php/functions.php";
 
+session_start();
 
 switch($_GET['action']) {
 	case "add-to-cart":
 		$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_POST['product-id'])[0];
-		addToCart($_POST['product-id'],$_POST['product-quantity'],$_POST['product-color']);
+		addToCart($_POST['product-id'],$_POST['product-quantity']);
 		header("location:added_to_cart.php?id={$_POST['product-id']}");
 		break;
 	case "update-cart-item":

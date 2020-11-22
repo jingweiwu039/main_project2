@@ -3,9 +3,9 @@
 include_once "lib/php/functions.php";
 $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 $images = explode(",", $product->images);
-//$image_elements = array_reduce($image,function($r,$o){
-//	return $r."<img src='img/$o'>";
-//});
+$image_elements = array_reduce($image,function($r,$o){
+	return $r."<img src='img/$o'>";
+});
 
 //print_p($_SESSION);
 
@@ -21,17 +21,16 @@ $images = explode(",", $product->images);
 
 	<div id="container">
 
-		<div class="space"></div>
-			<form action="cart_actions.php?action=add-to-cart" method="POST">
+			<form action="cart_actions.php?action=add-to-cart" method="POST" class="">
 
 				<input type="hidden" name="product-id" value="<?= $product->id ?>">
 				<section class="item-picture-section col-xs-12 col-md-6">
 					<div>
 						<img id="item-picture" src="img/<?= $product->thumbnail ?>">
 					</div>
-				<!--	<div>
+					<div>
 						<?= $image_elements ?>	
-					</div> -->
+					</div> 
 					
 				</section>
 				<section class="item-description-section col-xs-12 col-md-6">

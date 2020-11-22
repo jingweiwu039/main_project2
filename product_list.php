@@ -18,7 +18,6 @@
 		</div>
 	</section>
 
-		
 	<div class="container">
 
 	<!--	<div class="grid gap">
