@@ -4,7 +4,7 @@ include_once "lib/php/functions.php";
 
 ?>
 
-session_start();
+
 
 <div class="navbar">
 	<ul class="nav nav-flex">

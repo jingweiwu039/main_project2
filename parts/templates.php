@@ -41,8 +41,11 @@ return $r.<<<HTML
 			<input type="submit" class="btn delete" value="Delete" style="font-size: 0.9em">
 		</form>
 	</div>
-	<!-- <div class="quantity buttons_added display-flex" style="align-items: center; flex-direction:row; display:flex; margin-right:2em">
-		<input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="$o->quantity" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+	<!--<div class="quantity buttons_added display-flex" style="align-items: center; flex-direction:row; display:flex; margin-right:2em">
+		<form action="cart_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
+			<input type="hidden" name="id" value="$o->id">
+			<input type="number" step="1" min="1" max="" name="quantity" value="$o->quantity" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+		</form>
 	</div>-->
 	
 	<div class="flex-none">

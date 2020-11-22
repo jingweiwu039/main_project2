@@ -3,7 +3,7 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
-session_start();
+
 
 //$cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (3,6,8)");
 $cart_items = getCartItems();

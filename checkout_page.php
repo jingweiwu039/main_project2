@@ -1,6 +1,11 @@
-<?php include_once "lib/php/functions.php"; ?><!DOCTYPE html>
+<?php
+
+include_once "lib/php/functions.php";
+
+
+?><!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
 	<meta charset="utf-8">
 	<title>Checkout Page</title>
 	<?php include "parts/meta.php"; ?>

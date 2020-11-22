@@ -1,4 +1,10 @@
-<?php include_once "lib/php/functions.php"; ?><!DOCTYPE html>
+<?php
+
+include_once "lib/php/functions.php";
+
+session_start();
+
+?><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -23,7 +29,7 @@
 				   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
 				</p>
 			</div>
-			<div class="form-control explore-button" style="max-width:20em">
+			<div class="form-control explore-button" style="max-width:25em">
 				<a href="product_list.php" class="form-button-s">EXPLORE</a>
 			</div>
 		</div>		

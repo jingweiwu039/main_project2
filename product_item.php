@@ -1,6 +1,8 @@
 <?php
 
 include_once "lib/php/functions.php";
+
+
 $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 $images = explode(",", $product->images);
 $image_elements = array_reduce($image,function($r,$o){
@@ -20,10 +22,8 @@ $image_elements = array_reduce($image,function($r,$o){
 	<?php include "parts/navbar.php"; ?>
 
 	<div id="container">
-
-			<form action="cart_actions.php?action=add-to-cart" method="POST" class="">
-
-				<input type="hidden" name="product-id" value="<?= $product->id ?>">
+				
+			
 				<section class="item-picture-section col-xs-12 col-md-6">
 					<div>
 						<img id="item-picture" src="img/<?= $product->thumbnail ?>">
@@ -31,9 +31,13 @@ $image_elements = array_reduce($image,function($r,$o){
 					<div>
 						<?= $image_elements ?>	
 					</div> 
-					
+						
 				</section>
+
 				<section class="item-description-section col-xs-12 col-md-6">
+					<form action="cart_actions.php?action=add-to-cart" method="POST" class="">
+
+						<input type="hidden" name="product-id" value="<?= $product->id ?>">
 					
 						
 						<h1 class="item-title"><?= $product->name ?></h1>
@@ -59,8 +63,9 @@ $image_elements = array_reduce($image,function($r,$o){
 						<div class="form-control">
 							<input type="submit" class="form-button" value="ADD TO CART">
 						</div>
+					</form>	
 				</section>
-			</form>			
+					
 	</div>
 	<div id="container-product-detail">
 			<div class="product-detail">
