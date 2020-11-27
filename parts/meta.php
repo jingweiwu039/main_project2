@@ -3,7 +3,7 @@
 
     <base href="http://jingweiwu93.com/aau/wnm_608/main_project2/">
 
-	 <!--<base href="http://localhost:8080/">-->
+	<!--<base href="http://localhost:8080/">-->
 
 <!-- CSS STYLESHEET-->
 	<link rel="stylesheet" href="lib/css/styleguide.css">

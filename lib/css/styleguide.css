@@ -83,6 +83,14 @@ a:hover {
 
 }
 
+.container-2{
+	
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 3rem;
+
+}
 
 
 .display-flex {display: flex;}
@@ -125,7 +133,7 @@ a:hover {
 }
 
 .navbar{
-	background-color: var(--color-white);
+	background-color: rgba(212, 203, 199, 0.98);
 	color: var(--color-neutral-dark);
 	line-height: var(--header-height);
 	overflow: hidden;
@@ -176,12 +184,13 @@ a:hover {
 		margin-top: 0;
 		margin-left: 1em;
 		font-variant: small-caps;
+		color: white;
 
 }
 
 .nav a:hover{
-		background-color: var(--color-white);
-		color: black;
+		background-color: transparent;
+		color: white;
 		text-decoration: none;
 }
 
@@ -544,7 +553,7 @@ a.form-button-s {
 	background-color: var(--color-neutral-light);
 	font-size: 0.8em;
 	border-radius: 2em;
-	padding: 0.8em 1.5em;
+	padding: 0.5em 1.5em;
 	display: flex;
 }
 
@@ -577,7 +586,7 @@ a.form-button-s {
 .hotdog{
 	background-color: var(--color-neutral-light);
 	border-radius: 2em;
-	padding: 1em 1.5em;
+	/*padding: 1em 1.5em;*/
 	display: flex;
 }
 
@@ -621,11 +630,25 @@ a.form-button-s {
 	outline: none;
 }
 
+.form-select-2>select {
+	display: inline-block;
+	background-color: transparent;
+	-webkit-appearance: none;
+	border: 0px solid;
+	width: 100%;
+	background-color: #f7f5f5;
+	border-radius: 0.3em;
+	cursor: pointer;
+	outline: none;
+}
+
+.form-select-2,
 .form-select {
 	position: relative;
 	padding-top: 5px;
 }
 
+.form-select-2::after,
 .form-select::after {
 	content: '⌄';
 	font-family: arial,sans-serif;
@@ -729,3 +752,63 @@ a.form-button-s {
 .table.lined.all{
 	border: 1px solid var(--color-neutral-medium);
 }
+
+/* Search Bar */
+
+/*.wrapper {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search_box {
+	background: #643fef;
+	position: relative;
+	padding: 15px;
+	border-radius: 50px;
+	display: flex;
+}
+
+.search_box .search_btn {
+	width:50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #7a5cf0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+
+.search_box .input_search {
+	outline: none;
+	border: 0;
+	background: #7a5cf0;
+	color: #fff;
+	padding: 15px 20px;
+	width: 300px;
+	height: 50px;
+	border-radius: 50px;
+}
+
+::placeholder {
+	color:#fff;
+}
+
+::-webkit-input-placeholder {
+	color:#fff;
+}
+*
+
+
+
+
+
+
+
+
+

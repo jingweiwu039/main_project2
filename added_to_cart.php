@@ -1,8 +1,7 @@
 <?php
 
 include_once "lib/php/functions.php";
-
-session_start();
+include_once "parts/templates.php";
 
 $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 $cart_product = cartItemById($_GET['id']);
@@ -19,22 +18,23 @@ $cart_product = cartItemById($_GET['id']);
 	<?php include "parts/navbar.php"; ?>
 
 	<div class="container">
-
 		<div class="card soft">
 			<div class="confirmation">
-				<h3>You added <?= $product->name ?> to your cart!</h3>
-				<p>There are now <?= $cart_product->quantity ?> of <?= $product->name ?> in your cart.</p>
-			</div>
-			<div class="display-flex">
-				<div class="flex-none detail-p"><a href="product_list.php">Continue Shopping</a></div>
-				<div class="flex-stretch"></div>
-				<div class="flex-none detail-p"><a href="cart.php">Go To Shopping Cart</a></div>
+				<h2>&#x2713; ADDED TO YOUR CART</h2>
+				<p><?= $cart_product->quantity ?> x <?= $product->name ?></p>
 			</div>
 			
-		</div>	
+			<hr style="height:2px;border-width:0;background-color:#e8e7e3;margin-bottom: 2vh">
+			
+			<div class="display-flex">
+				<div class="flex-none detail-p"><a href="product_list.php">CONTINUE SHOPPING</a></div>
+				<div class="flex-stretch"></div>
+				<div class="flex-none detail-p"><a href="cart.php">VIEW CART</a></div>
+			</div>
+		</div>
 	</div>
 	
 	
 	<?php include "parts/footer.php"; ?>
 </body>
-</html
+</html>

@@ -11,7 +11,6 @@ return $r.<<<HTML
 		</figcaption>
 	</figure>
 </a>
-
 HTML;
 }
 
@@ -94,14 +93,11 @@ function cartTotals() {
 		<hr style="height:1px;border-width:0;background-color:#e8e7e3;margin-top: 2vh;">
 		<br>
 		
-
 		<div class="detail-p-total display-flex">
-			<div class="flex-stretch">Subtotal</div>
+			<div class="flex-stretch">Total</div>
 			<div class="flex-none">&dollar;$taxedfixed</div>
 		</div>
 		<hr style="height:2px;border-width:0;background-color:#e8e7e3;margin-top: 2vh">
-
-
 	</div>
 	<div class="col-xs-12 col-md-7 display-flex" style="flex-direction:row-reverse;">
 		<div class="form-control">

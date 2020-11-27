@@ -17,7 +17,7 @@ resetCart();
 
 		<div class="card soft">
 			
-			<div class="motto">
+			<div class="confirmation">
 				<h2>Thank you for your purchase</h2>
 			</div>
 			<div class="hr">
