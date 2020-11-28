@@ -633,6 +633,7 @@ a.form-button-s {
 	outline: none;
 }
 
+
 .form-select-2>select {
 	display: inline-block;
 	background-color: transparent;
@@ -640,7 +641,7 @@ a.form-button-s {
 	border: 0px solid;
 	width: 100%;
 	border-radius: 3px;
-	color:white;
+	color:darkgrey;
 	cursor: pointer;
 	outline: none;
 }
@@ -649,6 +650,13 @@ a.form-button-s {
 .form-select {
 	position: relative;
 	padding-top: 5px;
+	
+}
+
+.form-select-2 {
+	width:20%;
+	content: '▾';
+	letter-spacing: 2px;
 }
 
 .form-select-2::after,

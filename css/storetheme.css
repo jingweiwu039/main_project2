@@ -113,6 +113,65 @@ nav li>a:hover {
 	font-size: 1em;
 }
 
+/*Side Nav*/
+
+.side-filter-container {
+	padding-left:25px;
+	padding-right:25px;
+	padding-top: 2.7em;
+}
+
+.filter-link {
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9em;
+	color: darkgrey;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.15em;
+}
+
+.filter-link:hover {
+	color: black;
+}
+
+/*a.filter-link:after {
+   background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a.filter-link:hover:after {
+	 width: 100%; 
+     left: 0; 
+}*/
+
+.filter-a {
+	text-align: center;
+	margin-bottom: 3.5vh;
+}
+.sort-by {
+	padding: 8px 14px;
+	border: 1px solid darkgrey;
+	border-radius: 3px;
+	margin-right:0;
+}
+
+
+@media screen and (max-width: 600px) {
+	.product-container {
+		margin-top: -40px;
+	} 
+}
+
 
 /* HOMEPAGE */
 .categories,
