@@ -21,9 +21,9 @@ include_once "lib/php/functions.php";
 						</form>				
 					</div>
 				</li>
-				<li><a href="product_list.php">Products</a></li>
-				<li><a href="about_us.php">About Us</a></li>
-			    <li><a href="contact.php">Contact</a></li> 
+				<li><a href="product_list.php" class="nav-hover">Products</a></li>
+				<li><a href="about_us.php" class="nav-hover">About Us</a></li>
+			    <li><a href="contact.php"  class="nav-hover">Contact</a></li> 
 				<li><a href="cart.php">
 		  			<span>Cart</span>
 		  			<span class="badge"><?= makeCartBadge(); ?></span>

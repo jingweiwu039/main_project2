@@ -11,6 +11,10 @@ session_start();
 	<title>Furnitre.</title>
 	<?php include "parts/meta.php"; ?>
 
+	<script src="lib/js/functions.js"></script>
+	<script src="js/templates.js"></script>
+	<script src="js/product_list.js"></script>
+
 </head>
 <style>
 	html,body {
@@ -24,13 +28,13 @@ session_start();
 	<div class="homepage-img">
 		<div class="content">
 			<div class="slogan">
-				<h2 class="main_slogan">hjørne</h2>
+				<h2 class="main_slogan">Minimalism</h2>
 				<p>
-				   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+				   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. 
 				</p>
-			</div>
-			<div class="form-control explore-button" style="max-width:25em">
-				<a href="product_list.php" class="form-button-s">EXPLORE</a>
+				<div class="form-control explore-button" style="max-width:25em">
+					<a href="product_list.php" class="form-button-s" style="margin-top: 0.5em">Shop Now</a>
+				</div>
 			</div>
 		</div>		
 	</div>

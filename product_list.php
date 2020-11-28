@@ -37,52 +37,24 @@ session_start();
 			<div class="display-flex">
 				<div class="flex-stretch display-flex">
 					<div class="flex-none filter-item">
-						<button data-filter="category" data-value="chair" type="button" class="filter-btn">Chair
-							<span class="dropdown-icon svg-icon">
+						<button data-filter="category" data-value="chair" type="button" class="filter-btn">Chair<!--	<span class="dropdown-icon svg-icon">
 								<svg width="14" height="14" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="dropdown-icon svg-icon">
 									<g transform="rotate(90, 12, 12)" class="jsx-1586763759">
 										<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" class="jsx-1586763759">
 										</path>
 									</g>
 								</svg>
-							</span>
+							</span>-->
 						</button>
 					</div>
 					<div class="flex-none filter-item">
-						<button data-filter="category" data-value="sofa" type="button" class="filter-btn">Sofa
-							<span class="dropdown-icon svg-icon">
-								<svg width="14" height="14" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="dropdown-icon svg-icon">
-									<g transform="rotate(90, 12, 12)" class="jsx-1586763759">
-										<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" class="jsx-1586763759">
-										</path>
-									</g>
-								</svg>
-							</span>
-						</button>
+						<button data-filter="category" data-value="sofa" type="button" class="filter-btn">Sofa</button>
 					</div>
 					<div class="flex-none filter-item">
-						<button data-filter="category" data-value="table" type="button" class="filter-btn">Table
-							<span class="dropdown-icon  svg-icon">
-								<svg width="14" height="14" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="dropdown-icon svg-icon">
-									<g transform="rotate(90, 12, 12)" class="jsx-1586763759">
-										<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" class="jsx-1586763759">
-										</path>
-									</g>
-								</svg>
-							</span>
-						</button>
+						<button data-filter="category" data-value="table" type="button" class="filter-btn">Table</button>
 					</div>
 					<div class="flex-none filter-item">
-						<button data-filter="category" data-value="lighting" type="button" class="filter-btn">Lighting
-							<span class="dropdown-icon  svg-icon">
-								<svg width="14" height="14" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="dropdown-icon svg-icon">
-									<g transform="rotate(90, 12, 12)" class="jsx-1586763759">
-										<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" class="jsx-1586763759">
-										</path>
-									</g>
-								</svg>
-							</span>
-						</button>
+						<button data-filter="category" data-value="lighting" type="button" class="filter-btn">Lighting</button>
 					</div>
 				</div>
 				<div class="flex-none">
@@ -102,8 +74,7 @@ session_start();
 	</section>
 
 	<div class="container-2">
-			<div class="productlist grid gap"></div>
-
+		<div class="productlist grid gap"></div>
 	</div>
 	<?php include "parts/footer.php"; ?>
 
