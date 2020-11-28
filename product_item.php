@@ -17,6 +17,7 @@ $image_elements = array_reduce($image,function($r,$o){
 	<meta charset="utf-8">
 	<title>Product List</title>
 	<?php include "parts/meta.php"; ?>
+	<script src="js/product_thumbs.js"></script>
 </head>
 <body>
 	<?php include "parts/navbar.php"; ?>
