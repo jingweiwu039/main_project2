@@ -1,13 +1,13 @@
 <?php
 
 include_once "lib/php/functions.php";
-
+include_once "parts/templates.php";
 
 $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 $images = explode(",", $product->images);
-$image_elements = array_reduce($image,function($r,$o){
-	return $r."<img src='img/$o'>";
-});
+//$image_elements = array_reduce($images,function($r,$o){
+//	return $r."<img src='img/$o'>";
+//});
 
 //print_p($_SESSION);
 
@@ -82,6 +82,15 @@ $image_elements = array_reduce($image,function($r,$o){
 			</div>	
 		</div>
 	</div>
+
+
+	<div>
+		<h2 class="detail-detail">RECOMMENDED PRODUCTS</h2>
+		<?php 
+			recommendedSimilar($product->category, $product->id);
+		?>
+	</div>
+
 
 <?php include "parts/footer.php"; ?>
 </body>

@@ -2,7 +2,6 @@
 
 include_once "lib/php/functions.php";
 
-session_start();
 
 ?><!DOCTYPE html>
 <html>

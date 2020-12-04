@@ -1,3 +1,16 @@
-Host: http://jingweiwu93.com/aau/wnm_608/
-Styleguide page: http://jingweiwu93.com/aau/wnm_608/module_4/styleguide/index.html
-Styleguide page: http://jingweiwu93.com/aau/wnm_608/module_5/styleguide/
+#Jingwei Wu
+
+##Relevant Links
+
+- http://jingweiwu93.com/aau/wnm_608/
+
+- http://jingweiwu93.com/aau/wnm_608/main_project2
+
+- Styleguide page: http://jingweiwu93.com/aau/wnm_608/main_project2/styleguide/index.html
+
+- Admin folder: http://jingweiwu93.com/aau/wnm_608/main_project2/admin
+
+##Extra Links
+- http://jingweiwu93.com/aau/wnm_608/main_project2/admin/users.php
+- http://jingweiwu93.com/aau/wnm_608/main_project2/notes
+- http://jingweiwu93.com/aau/wnm_608/main_project2/notes/reading_data.php

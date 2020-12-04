@@ -2,6 +2,7 @@
 
 include_once "lib/php/functions.php";
 
+
 session_start();
 
 ?><!DOCTYPE html>
@@ -81,6 +82,7 @@ session_start();
 		<?php endforeach; ?>
 			</div>
 		</section>
+
 
 	<?php include "parts/footer.php"; ?>
 
