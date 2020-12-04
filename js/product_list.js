@@ -1,6 +1,6 @@
 
 const showResults = d => {
-	$(".productlist").html(
+	$(".productlist.filter").html(
 		d.error?d.error:
 		d.result.length?listItemTemplate(d.result):
 		'No Results');

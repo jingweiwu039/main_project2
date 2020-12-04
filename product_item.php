@@ -3,11 +3,12 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
+
 $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 $images = explode(",", $product->images);
-//$image_elements = array_reduce($images,function($r,$o){
-//	return $r."<img src='img/$o'>";
-//});
+$image_elements = array_reduce($images,function($r,$o){
+	return $r."<img src='img/$o'>";
+});
 
 //print_p($_SESSION);
 
@@ -17,6 +18,7 @@ $images = explode(",", $product->images);
 	<meta charset="utf-8">
 	<title>Product List</title>
 	<?php include "parts/meta.php"; ?>
+
 	<script src="js/product_thumbs.js"></script>
 </head>
 <body>
@@ -29,7 +31,7 @@ $images = explode(",", $product->images);
 					<div>
 						<img id="item-picture" src="img/<?= $product->thumbnail ?>">
 					</div>
-					<div>
+					<div class="images-thumbs">
 						<?= $image_elements ?>	
 					</div> 
 						
@@ -84,7 +86,7 @@ $images = explode(",", $product->images);
 	</div>
 
 
-	<div>
+	<div class="recommendation">
 		<h2 class="detail-detail">RECOMMENDED PRODUCTS</h2>
 		<?php 
 			recommendedSimilar($product->category, $product->id);

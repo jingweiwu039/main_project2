@@ -264,7 +264,16 @@ a.filter-link:hover:after {
 
 #item-picture {
 	width: 80%;
+	height:40vh;
 	margin-top:6em;
+	margin-bottom: 2em;
+	object-fit: contain;
+}
+
+.images-thumbs img{
+	width: 8em;
+	height: 6em;
+	object-fit: contain;
 }
 
 .space {
@@ -305,6 +314,15 @@ a.filter-link:hover:after {
 	margin-top: 7em;
 	margin-bottom: 7em;
 	justify-content: center;
+
+}
+
+
+.recommendation {
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 5rem;
 
 }
 
@@ -472,11 +490,7 @@ span.badge:not(:empty)::before {
 	margin-top:6em;
 }
 
-.images-thumbs img{
-	width: 8em;
-	height: 6em;
-	object-fit: contain;
-}
+
 h3,
 .subtotal h5,
 .subtotal p{

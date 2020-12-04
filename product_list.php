@@ -76,7 +76,7 @@ include_once "lib/php/functions.php";
 				</select>
 			</div>	
 			<div class="container-2">
-				<div class="productlist grid gap"></div>
+				<div class="productlist filter grid gap"></div>
 			</div>	
 			<?php include "parts/footer.php"; ?>
 		</div>

@@ -1,4 +1,3 @@
-
 $(()=>{
 
 	$(".images-thumbs img").on("mouseenter",function(e){
