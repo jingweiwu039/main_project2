@@ -9,7 +9,7 @@ $empty_product = (object) [
 	"dimensions"=>"100x100",
 	"price"=>"400",
 	"category"=>"chair",
-	"description"=>"It combines innovation with traditional techniques.",
+	"description"=>"It combines innovation with traditional techniques",
 	"thumbnail"=>"natural_chair_thumb.jpg",
 	"images"=>"natural_chair_1.jpg,natural_chair_2.jpg"
 ];
@@ -20,7 +20,6 @@ $empty_product = (object) [
 try {
 	$conn = makePDOConn();
 	switch($_GET['action']){
-
 		case "update":
 			$statement = $conn->prepare("UPDATE
 				`products`
@@ -34,7 +33,7 @@ try {
 					`description`=?,
 					`thumbnail`=?,
 					`images`=?,
-					`date_modify`= NOW()
+					`date-modify`= NOW()
 				WHERE `id` =?
 				");
 			$statement->execute([
@@ -62,11 +61,11 @@ try {
 					`material`,
 					`dimensions`,
 					`category`,
-					`description`
+					`description`,
 					`thumbnail`,
 					`images`,
-					`date_create`,
-					`date_modify`
+					`date-create`,
+					`date-modify`
 				)
 				VALUES (?,?,?,?,?,?,?,?,?,NOW(),NOW())
 				");
@@ -160,27 +159,27 @@ $form = <<<HTML
 	</div>
 	<div class="form-control">
 		<label class="form-label" for="product-price">Price</label>
-		<input class="form-input" name="product-price" id="product-price" type="number" min="0" max="1000" step="0.01" value="$o->price" placeholder="Enter the Product price">
+		<input class="form-input" name="product-price" id="product-price" type="number" min="0" max="100000" step="0.01" value="$o->price" placeholder="Enter the Product price">
 	</div>
 	<div class="form-control">
-		<label class="form-label" for="product-price">Material</label>
+		<label class="form-label" for="product-material">Material</label>
 		<input class="form-input" name="product-material" id="product-material" type="text" min="0" max="1000" step="1" value="$o->material" placeholder="Enter the Product material">
 	</div>
 	<div class="form-control">
-		<label class="form-label" for="product-price">Category</label>
+		<label class="form-label" for="product-category">Category</label>
 		<input class="form-input" name="product-category" id="product-category" type="text" min="0" max="1000" step="1" value="$o->category" placeholder="Enter the Product category">
 	</div>
 	<div class="form-control">
-		<label class="form-label" for="product-price">Dimensions</label>
+		<label class="form-label" for="product-dimensions">Dimensions</label>
 		<input class="form-input" name="product-dimensions" id="product-dimensions" type="text" min="0" max="1000" step="1" value="$o->dimensions" placeholder="Enter the Product dimensions">
 	</div>
 	<div class="form-control">
-		<label class="form-label" for="product-price">Color</label>
+		<label class="form-label" for="product-color">Color</label>
 		<input class="form-input" name="product-color" id="product-color" type="text" min="0" max="1000" step="1" value="$o->color" placeholder="Enter the Product color">
 	</div>
 	<div class="form-control">
 		<label class="form-label" for="product-description">Description</label>
-		<textarea class="form-input" name="product-description" id="product-description" type="text" value="$o->price" placeholder="Enter the Product description">$o->description</textarea>
+		<textarea class="form-input" name="product-description" id="product-description" type="text" value="$o->description" placeholder="Enter the Product description">$o->description</textarea>
 	</div>
 	<div class="form-control">
 		<label class="form-label" for="product-thumbnail">Thumbnail</label>
