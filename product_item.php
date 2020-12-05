@@ -28,8 +28,8 @@ $image_elements = array_reduce($images,function($r,$o){
 				
 			
 				<section class="item-picture-section col-xs-12 col-md-6">
-					<div>
-						<img id="item-picture" src="img/<?= $product->thumbnail ?>">
+					<div class="images-main">
+						<img src="img/<?= $product->thumbnail ?>">
 					</div>
 					<div class="images-thumbs">
 						<?= $image_elements ?>	

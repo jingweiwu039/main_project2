@@ -262,7 +262,7 @@ a.filter-link:hover:after {
 
 
 
-#item-picture {
+.images-main img{
 	width: 80%;
 	height:40vh;
 	margin-top:6em;

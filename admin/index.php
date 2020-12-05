@@ -3,15 +3,15 @@
 include "../lib/php/functions.php";
 
 $empty_product = (object) [
-	"name"=>"sjsjsj",
-	"material"=>"velvet",
-	"color"=>"green",
+	"name"=>"Natural Chair",
+	"material"=>"wood",
+	"color"=>"brown",
 	"dimensions"=>"100x100",
-	"price"=>"200",
-	"category"=>"sofa",
-	"description"=>"nice",
-	"thumbnail"=>"sjsjsj.jpg",
-	"images"=>"sjsjsj_1.jpg"
+	"price"=>"400",
+	"category"=>"chair",
+	"description"=>"It combines innovation with traditional techniques.",
+	"thumbnail"=>"natural_chair_thumb.jpg",
+	"images"=>"natural_chair_1.jpg,natural_chair_2.jpg"
 ];
 
 
@@ -88,7 +88,8 @@ try {
 			$statement = $conn->prepare("DELETE FROM `products` WHERE id=?");
 			$statement->execute([$_GET['id']]);
 			header("location:{$_SERVER['PHP_SELF']}");
-			break;			}
+			break;			
+	}
 }	catch(PDOException $e) {
 	die($e->getMessage());
 }
@@ -100,8 +101,8 @@ return $r.<<<HTML
 <div class="card soft">
 	<div class="display-flex">
 		<div class="flex-none images-thumbs"><img src='img/$o->thumbnail'></div>
-		<div class="flex-stretch">$o->name</div>
-		<div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a></div>
+		<div class="flex-stretch" style="padding: 1em">$o->name</div>
+		<div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button-s">Edit</a></div>
 	</div>
 </div>
 HTML;
@@ -159,27 +160,27 @@ $form = <<<HTML
 	</div>
 	<div class="form-control">
 		<label class="form-label" for="product-price">Price</label>
-		<input class="form-input" type="text" name="product-price" id="product-price" type="Number" min="0" max="1000" step="0.01" value="$o->price" placeholder="Enter the Product price">
+		<input class="form-input" name="product-price" id="product-price" type="number" min="0" max="1000" step="0.01" value="$o->price" placeholder="Enter the Product price">
 	</div>
 	<div class="form-control">
 		<label class="form-label" for="product-price">Material</label>
-		<input class="form-input" type="text" name="product-material" id="product-material" type="Number" min="0" max="1000" step="1" value="$o->material" placeholder="Enter the Product material">
+		<input class="form-input" name="product-material" id="product-material" type="text" min="0" max="1000" step="1" value="$o->material" placeholder="Enter the Product material">
 	</div>
 	<div class="form-control">
 		<label class="form-label" for="product-price">Category</label>
-		<input class="form-input" type="text" name="product-category" id="product-category" type="Number" min="0" max="1000" step="1" value="$o->category" placeholder="Enter the Product category">
+		<input class="form-input" name="product-category" id="product-category" type="text" min="0" max="1000" step="1" value="$o->category" placeholder="Enter the Product category">
 	</div>
 	<div class="form-control">
 		<label class="form-label" for="product-price">Dimensions</label>
-		<input class="form-input" type="text" name="product-dimensions" id="product-dimensions" type="Number" min="0" max="1000" step="1" value="$o->dimensions" placeholder="Enter the Product dimensions">
+		<input class="form-input" name="product-dimensions" id="product-dimensions" type="text" min="0" max="1000" step="1" value="$o->dimensions" placeholder="Enter the Product dimensions">
 	</div>
 	<div class="form-control">
 		<label class="form-label" for="product-price">Color</label>
-		<input class="form-input" type="text" name="product-color" id="product-color" type="Number" min="0" max="1000" step="1" value="$o->color" placeholder="Enter the Product color">
+		<input class="form-input" name="product-color" id="product-color" type="text" min="0" max="1000" step="1" value="$o->color" placeholder="Enter the Product color">
 	</div>
 	<div class="form-control">
 		<label class="form-label" for="product-description">Description</label>
-		<textarea class="form-input" type="text" name="product-description" id="product-description" type="text" value="$o->price" placeholder="Enter the Product description">$o->description</textarea>
+		<textarea class="form-input" name="product-description" id="product-description" type="text" value="$o->price" placeholder="Enter the Product description">$o->description</textarea>
 	</div>
 	<div class="form-control">
 		<label class="form-label" for="product-thumbnail">Thumbnail</label>
@@ -217,12 +218,11 @@ echo <<<HTML
 $output
 HTML;
 
-};
+}
 
 
 
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -247,7 +247,7 @@ HTML;
 	<div class="container">
 		<?php 
             if(isset($_GET['id'])) {
-            	echo showProductPage(
+            	showProductPage(
             		$_GET['id']=="new" ?
             		$empty_product :
             		makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0]
@@ -261,7 +261,7 @@ HTML;
 			
 			<?php
 
-			$result = makeQuery(makeConn(),"SELECT * FROM `products`");
+			$result = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY `date-create` DESC");
 
 			echo array_reduce($result,'productListItem');
 
