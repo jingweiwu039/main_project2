@@ -8,11 +8,17 @@ include_once "lib/php/functions.php";
 <script src="js/templates.js"></script>
 <script src="js/product_list.js"></script>
 	
-
+<input type="checkbox" id="menu" class="hidden">
 <div class="navbar">
 	<ul class="nav nav-flex">
-		<h1 class="logo"><a href="index.php">Furnitre.</a></h1>
-		<div class="nav-items-wrapper">
+		<div class="flex-none">
+			<h1 class="logo"><a href="index.php">Furnitre.</a></h1>
+		</div>
+	<!--	<div class="flex-stretch"></div>
+		<div class="flex-none menu-button">
+			<label for="menu">&equiv;</label>
+		</div>-->
+		<div class="nav-items-wrapper nav-flex flex-none">
 			<ul>
 				<li>
 					<div class="form-control">

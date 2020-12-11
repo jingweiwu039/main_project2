@@ -582,6 +582,58 @@ h3,
  outline: none; }
 */
 
+/*Responsive navbar */
+
+/*@media (max-width: 1100px) {
+	.container {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	.navbar h1 {
+		font-size: 1.5em;
+	}
+	.motto h1 {
+		font-size: 2.5em;
+	}
+
+	.menu-button label {display: none;}
+}
+
+
+
+@media (max-width: 400px) {
+	.navbar .display-flex {
+		flex-wrap: wrap;
+	}
+	.navbar .nav {
+		width: 100%;
+		display: none;
+	}
+
+	.navbar .nav-flex ul {
+		display: block;
+	}
+
+	.navbar .nav li {
+		line-height: 2em;
+	}
+	
+
+	.menu-button label {
+	display: block;
+	padding: 0 1em;
+	}
+
+	.motton h1 {
+		font-size:1.5em;
+	}
+
+	#menu:checked+.navbar .nav {
+		display:block;
+	}
+}*/
+
 /* FOOTER */
 
 footer {

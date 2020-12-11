@@ -105,6 +105,9 @@ a:hover {
 .flex-justify-center {justify-content: center;}
 
 
+.flex-column {flex-direction: column;}
+.flex-wrap {flex-wrap: wrap;}
+
 /* SMALL CLASSES*/
 .media-image {
 	max-width: 100%;
@@ -117,7 +120,7 @@ a:hover {
 /* COMPONENT CLASSES */
 
 .content {
-	margin-top: 5vh;
+	margin-top: 3.5vh;
 	margin-bottom: 5vh;
 }
 

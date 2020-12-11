@@ -99,11 +99,7 @@ function cartTotals() {
 		</div>
 		<hr style="height:2px;border-width:0;background-color:#e8e7e3;margin-top: 2vh">
 	</div>
-	<div class="col-xs-12 col-md-7 display-flex" style="flex-direction:row-reverse;">
-		<div class="form-control">
-			<a href="checkout_page.php" class="form-button-s">CHECKOUT</a>
-		</div>
-	</div>
+	
 HTML;
 }
 
@@ -120,10 +116,14 @@ HTML;
 }
 
 
+function recommendedAnything($limit=3) {
+	$result = makeQuery(makeConn(), "SELECT * FROM `products` ORDER BY rand() DESC LIMIT $limit");
+	recommendedProducts($result);
+}
 
 
 function recommendedCategory($cat, $limit=3) {
-	$result = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `category` = '$cat' ORDER BY `date_create` DESC LIMIT $limit ");
+	$result = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `category` = '$cat' ORDER BY `date-create` DESC LIMIT $limit ");
 	recommendedProducts($result);
 }
 

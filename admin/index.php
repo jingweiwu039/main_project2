@@ -81,7 +81,7 @@ try {
 				$_POST['product-images']
 			]);
 			$id = $conn->lastInsertId();
-			header("location:{$_SERVER['PHP_SELF']}id=$id");
+			header("location:{$_SERVER['PHP_SELF']}?id=$id");
 			break;
 		case "delete":
 			$statement = $conn->prepare("DELETE FROM `products` WHERE id=?");
