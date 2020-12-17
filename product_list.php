@@ -7,7 +7,7 @@ include_once "lib/php/functions.php";
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Product List</title>
+	<title>FURNITRE.</title>
 
 	<?php include "parts/meta.php"; ?>
 
