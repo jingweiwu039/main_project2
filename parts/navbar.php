@@ -7,10 +7,9 @@ include_once "lib/php/functions.php";
 <script src="lib/js/functions.js"></script>
 <script src="js/templates.js"></script>
 <script src="js/product_list.js"></script>
-<div class="content">
-	<input type="checkbox" id="menu">
-</div>	
 
+	
+<input type="checkbox" id="menu" class="hidden">
 <div class="navbar">
 	<ul class="nav nav-flex">
 		<div class="flex-none">
@@ -20,27 +19,24 @@ include_once "lib/php/functions.php";
 		<div class="flex-none menu-button">
 			<label for="menu">&equiv;</label>
 		</div>
-		
-		<div class="nav-items-wrapper nav-flex">
+		<div class="nav-items-wrapper">
 			<ul>
-				<li>
-					<div class="form-control">
-						<form class="hotdog light" id="product-search">
-							<input type="search" class="hotdog nav-search" placeholder="Search">
-						</form>				
-					</div>
-				</li>
 				<li><a href="product_list.php" class="nav-hover">Products</a></li>
 				<li><a href="about_us.php" class="nav-hover">About Us</a></li>
-			    <li><a href="contact.php"  class="nav-hover">Contact</a></li> 
+				<li><a href="contact.php"  class="nav-hover">Contact</a></li>
 				<li><a href="cart.php">
 		  			<span>Cart</span>
 		  			<span class="badge"><?= makeCartBadge(); ?></span>
 		  		</a></li>
 			</ul>
+			
 		</div>
-	</ul>				
+	</ul>
 </div>
+	
+	
+		
+
 
 
 

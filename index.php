@@ -27,9 +27,9 @@ include_once "lib/php/functions.php";
 	<div class="homepage-img">
 		<div class="content">
 			<div class="slogan">
-				<h2 class="main_slogan">Minimalism</h2>
-				<p>
-				   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. 
+				<h2 class="main_slogan" style="margin-top: 0">COZY WINTER LIVING</h2>
+				<p class="second_slogan">
+				   THE SEASON OF TOGETHERNESS
 				</p>
 				<div class="form-control explore-button" style="max-width:25em">
 					<a href="product_list.php" class="form-button-s" style="margin-top: 0.5em">Shop Now</a>
@@ -37,6 +37,7 @@ include_once "lib/php/functions.php";
 			</div>
 		</div>		
 	</div>
+
 
  <?php
   class Category {

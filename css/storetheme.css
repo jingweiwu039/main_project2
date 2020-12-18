@@ -16,19 +16,25 @@ body {
 
 
 
-.container {
 
+.homepage-img .content {
+	
+	/*padding-top: 29vh;*/
+	/*margin-top: 3.5vh;*/
+/*	margin-bottom: 5vh;
+	position: relative; */
+	margin-left: 30px;
+	max-width: 1200px;
 
-	height: 100%;
-	display: flex;
-	flex-direction: column;
 }
 
 .content {
-	padding-left: 15%;
-	padding-top: 29vh;
-
+	max-width: 800px;
+	
+	top:30vh;
 }
+
+
 
 
 body .homepage-img {
@@ -47,19 +53,27 @@ nav {
 	padding: 0;
 }
 
+.nav a {
+
+	margin-top: 0;
+	margin-left: 1em;
+	font-variant: small-caps;
+	color: white;
+	font-size: 1.1em;
+}
 
 
-.navbar {
+/*.navbar {
 	position: fixed;
 	top: 0;
 	z-index: 100;
-}
+}*/
 
 
 .nav-items-wrapper {
 	display: inline-block;
 	font-size: 1.1em;
-	text-align: center;
+/*	text-align: center;*/
 	margin-top: 0.4em;
 	margin-right: 0.8em;
 
@@ -77,8 +91,7 @@ nav {
 
 .logo a {
 	text-decoration: none;
-	color: white
-	;
+	color: white;
 }
 
 nav .nav-items {
@@ -162,7 +175,7 @@ a.filter-link:hover:after {
 	padding: 8px 14px;
 	border: 1px solid darkgrey;
 	border-radius: 3px;
-	margin-right:0;
+	margin-left:auto;
 }
 
 
@@ -195,27 +208,36 @@ a.filter-link:hover:after {
 }
 
 /* SLOGAN */
-.slogan {
+.content .slogan {
 
-	width: 23em;
+	position: relative;
+	margin-left: 30px;
+}
+
+.slogan {
+	position: absolute;
+	top: 30vh;
 }
 
 
 .main_slogan {
 	font-family:'Montserrat', sans-serif;
 	font: bolder;
-	font-size: 3em;
+	font-size: 2.7em;
 	margin-left: 0;
 	margin-bottom:0.2em;
 	
 }
 
-.slogan p{
-	font-size: 0.9em;
+.second_slogan {
+
+	letter-spacing: 0.2em;
 	font-family:'Montserrat', sans-serif;
-	font-weight: 300;
-	
+	font-size: 0.9em;
+	font-weight: 400;
+
 }
+
 
 .motto {
 	text-align: center;
@@ -226,7 +248,7 @@ a.filter-link:hover:after {
 
 .motto h1 {
 	font-size: 3.3em;
-	margin: 0.2em;
+	/*margin: 0.2em;*/
 	letter-spacing: 0.1em;
 }
 .motto p {
@@ -361,7 +383,7 @@ a.filter-link:hover:after {
 .detail-detail {
 	text-align: center;
 	letter-spacing: 0.2em;
-	margin: 4em;
+	/*margin: 4em;*/
 	margin-bottom: 3em;
 }
 
@@ -497,7 +519,7 @@ h3,
 .subtotal p{
 	text-align: center;
 	font-size: 1em;
-	font-family:'Montserrat', sans-serif;;
+	font-family:'Montserrat', sans-serif;
 }
 
 .cart-name {
@@ -583,13 +605,61 @@ h3,
  outline: none; }
 */
 
+
+/* New Nav bar */
+
+/*.navbar {
+  color: var(--color-white);
+  line-height: var(--header-height);
+}
+.navbar.shop {
+  color: var(--color-black);
+  line-height: var(--header-height);
+}
+.navbar h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  margin: 0;
+}
+.navbar a {
+  padding: 0 0.5em;
+}
+
+.main-nav {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+.flex-none.logo a {
+  color: black;
+  padding: 0;
+}
+.flex-none.logo a:hover {
+  color: black;
+  padding: 0;
+}
+.flex-none.nav a {
+  color: inherit;
+  font-weight: 500;
+}
+
+.flex-none.nav a:hover {
+  color: #6a9478;
+  background-color: transparent;
+}*/
+
 /*Responsive navbar */
+
+
 
 @media (max-width: 800px) {
 	.container {
 		padding-left: 1em;
 		padding-right: 1em;
+		padding-top: 2em;
 	}
+
+	
+
 
 	.navbar h1 {
 		font-size: 1.5em;
@@ -597,44 +667,73 @@ h3,
 	.motto h1 {
 		font-size: 2.5em;
 	}
+
+
 }
 
 .menu-button label { display: none;}
 
 @media (max-width: 400px) {
 	
-	.navbar  .display-flex {
+	.navbar .nav-flex {
 		flex-wrap: wrap;
 	}
-
-	.navbar .nav {
+	.navbar .nav-items-wrapper {
 		width: 100%;
-		
+		display: none;
+		padding-left: 0.8em;
 	}
-
 	.navbar .nav-items-wrapper ul {
 		display: block;
 	}
 
-	.navbar .nav li {
+	.navbar .nav-items-wrapper li {
 		line-height: 2em;
+
 	}
-	
+
+	.navbar a {
+		padding-bottom: 0.25em;
+	}
 	.menu-button label {
 	display: block;
 	padding: 0 1em;
 	}
 
-	.motton h1 {
-		font-size:1.5em;
+	#menu:checked+.navbar .nav-items-wrapper {
+		display: block;
 	}
 
-	#menu:checked+.navbar .nav {
-		display:block;
+	.main_slogan {
+	font-family:'Montserrat', sans-serif;
+	font: bolder;
+	font-size: 2.2em;
+	margin-left: 0;
+	margin-bottom:0.2em;
+	
 	}
-}
 
+	.second_slogan {
 
+		letter-spacing: 0.2em;
+		font-size: 0.84em;
+		font-family:'Montserrat', sans-serif;
+		font-weight: 300;
+		margin-right: 1.5em;
+
+	}
+
+	.container {
+		padding-top: 1em;
+	}
+
+	.motto h1 {
+		font-size: 2em;
+	}
+
+	.motto p {
+		font-size: 0.85em;
+	}
 
 
 }

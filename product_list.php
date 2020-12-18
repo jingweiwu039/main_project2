@@ -33,6 +33,7 @@ include_once "lib/php/functions.php";
 		</div>
 	</div>
 
+	
 	<div class="grid">
 		<div class="side-filter-container col-md-2 col-sm-12 form-control">
 			
@@ -65,21 +66,34 @@ include_once "lib/php/functions.php";
 				<a data-filter="category" data-value="lighting" class="filter-link">Lighting</a>
 			</div>
 		</div>
-
+	
 		<div class="col-md-9 col-sm-12">
-			<div class="form-select-2 sort-by" style="float:right">
-				<select class="js-sort">
-					<option value="1">Newest First</option>
-					<option value="2">Oldest First</option>
-					<option value="3">Price high to low</option>
-					<option value="4">Price low to high</option>
-				</select>
-			</div>	
+			<div class="display-flex flex-wrap">
+				<div class="flex-stretch display-flex">
+				</div>
+				<div class="flex-none">	
+					<div class="form-select-2 sort-by">
+						<select class="js-sort">
+							<option value="1">Newest First</option>
+							<option value="2">Oldest First</option>
+							<option value="3">Price high to low</option>
+							<option value="4">Price low to high</option>
+						</select>
+					</div>
+				</div>	
+			</div>
+
+
+	<!--	<div class="col-md-9 col-sm-12">-->
+			
 			<div class="container-2">
 				<div class="productlist filter grid gap"></div>
 			</div>	
 			<?php include "parts/footer.php"; ?>
 		</div>
+	
+
+	</div>
 	
 
 </body>
