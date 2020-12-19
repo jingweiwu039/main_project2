@@ -24,7 +24,30 @@ $image_elements = array_reduce($images,function($r,$o){
 <body>
 	<?php include "parts/navbar.php"; ?>
 
-	<div id="container">
+	<div class="grid">
+		<!--Left section-->
+		<div class="col-lg-7 col-md-12 col-sm-12" style="text-align: center;">
+			<div class="images-main">
+				<img src="img/<?= $product->thumbnail ?>">
+			</div>
+			<div class="images-thumbs">
+				<?= $image_elements ?>	
+			</div> 
+			
+		</div>
+		<!--Right section-->
+		
+	</div>
+
+
+
+
+
+
+
+
+
+	<!--<div id="container">
 				
 			
 				<section class="item-picture-section col-xs-12 col-md-6">
@@ -69,7 +92,7 @@ $image_elements = array_reduce($images,function($r,$o){
 					</form>	
 				</section>
 					
-	</div>
+	</div>-->
 	<div id="container-product-detail">
 			<div class="product-detail">
 				<h2 class="detail-detail">PRODUCT DETAILS</h2>

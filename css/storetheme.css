@@ -286,7 +286,7 @@ a.filter-link:hover:after {
 
 
 .images-main img{
-	width: 80%;
+	width: 50%;
 	height:40vh;
 	margin-top:6em;
 	margin-bottom: 2em;
@@ -316,11 +316,11 @@ a.filter-link:hover:after {
 	margin: 2em 2em 4em 6em;
 }
 
-.item-description-section {
+/*.item-description-section {
 	margin-top: 5em; 
 	display:inline-block;
 	width: 80%;
-}
+}*/
 
 .detail-description {
 	width: 70%;
@@ -649,7 +649,14 @@ h3,
 
 /*Responsive navbar */
 
+@media screen and (max-width: 1024px ){
+	.item-description-section {
+		padding-bottom: 10px;
+		padding:0 40px;
 
+	}
+
+}
 
 @media (max-width: 800px) {
 	.container {
@@ -734,6 +741,7 @@ h3,
 	.motto p {
 		font-size: 0.85em;
 	}
+	
 
 
 }

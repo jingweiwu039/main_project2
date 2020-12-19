@@ -1,7 +1,7 @@
 <?php
 
 include_once "lib/php/functions.php";
-
+include_once "parts/templates.php";
 
 ?><!DOCTYPE html>
 <html>
@@ -35,7 +35,7 @@ include_once "lib/php/functions.php";
 
 	
 	<div class="grid">
-		<div class="side-filter-container col-md-2 col-sm-12 form-control">
+		<div class="side-filter-container col-md-2 col-sm-12 col-xs-12 form-control">
 			
 			<div class="filter-a">
 				<a data-filter="category" data-value="" class="filter-link">All</a>
@@ -69,7 +69,7 @@ include_once "lib/php/functions.php";
 	
 		<div class="col-md-9 col-sm-12">
 			<div class="display-flex flex-wrap">
-				<div class="flex-stretch display-flex">
+				<div class="flex-stretch display-flex"> 
 				</div>
 				<div class="flex-none">	
 					<div class="form-select-2 sort-by">
@@ -90,7 +90,7 @@ include_once "lib/php/functions.php";
 				<div class="productlist filter grid gap"></div>
 			</div>	
 			<?php include "parts/footer.php"; ?>
-		</div>
+		
 	
 
 	</div>

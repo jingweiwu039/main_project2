@@ -2,7 +2,7 @@
 
 function productListTemplate($r,$o) {
 return $r.<<<HTML
-<a class="col-xs-12 col-sm-4" href="product_item.php?id=$o->id">
+<a class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" href="product_item.php?id=$o->id">
 	<figure class="figure product product-zoom">
 		<img src="img/$o->thumbnail" alt="">
 		<figcaption>
