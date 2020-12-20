@@ -20,13 +20,16 @@ include_once "lib/php/functions.php";
 			<div id="container-product-detail">
 			<div class="product-detail">
 				<h2 class="detail-detail">ABOUT US</h2>
+			
 				<section class="detail-description">
 					
-					<p class="detail-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, odit eveniet neque voluptate aperiam natus dolorem saepe itaque iste perferendis nihil, minima.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, odit eveniet neque voluptate aperiam natus dolorem saepe itaque iste perferendis nihil, minima.</p>
-				</section>
-				<section class="detail-features">
-				
-					<p class="detail-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, odit eveniet neque voluptate aperiam natus dolorem saepe itaque iste perferendis nihil, minima.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, odit eveniet neque voluptate aperiam natus dolorem saepe itaque iste perferendis nihil, minima.</p>
+					<p class="detail-p">Furnitre. Is an online retailer of modern furniture with an emphsis on modern classics and contemporary furnitures inspired by Bauhaus.</p>
+					<br>
+					
+					<p class="detail-p">Some of our furniture are the Mid Century Designer classic which are based on the originals of the time. We have taken great care extensively researching the aesthetics and materials used in the construction of the originals. Thus ensuring the products we offer today are of the highest quality, sympathetics to the original.</p>
+					<br>
+					
+					<p class="detail-p">Our modern funiture online consists of chairs, sofas, loveseats, loungers, tables and accessories for individuals, design professionals and corporations of all sizes. We are committed on bringing you tremendous value into the marketplace.</p>
 				</section>		
 			</div>	
 		</div>

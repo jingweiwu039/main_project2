@@ -41,7 +41,7 @@ $cart = getCartItems();
 				<div class="card soft">
 					<h2 class="detail-detail">PRODUCT CHECKOUT</h2>
 
-					<h3>Address</h3>
+					<h3 class="checkout-address">Address</h3>
 					<form class="form">
 						<div class="form-control">
 						    <label for="address-street" class="form-label">Street</label>
@@ -76,7 +76,7 @@ $cart = getCartItems();
 					</form>
 
 
-					<h3>Payment</h3>
+					<h3 class="checkout-address">Payment</h3>
 					<form class="form">
 						<div class="form-control">
 						    <label for="payment-name" class="form-label">Full Name</label>

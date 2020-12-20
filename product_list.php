@@ -29,7 +29,7 @@ include_once "parts/templates.php";
 		
 		<div class="motto">
 			<h1>FURNITURE</h1>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, odit eveniet neque voluptate aperiam natus dolorem saepe itaque iste perferendis nihil, minima. Numquam ullam enim, cupiditate veritatis aperiam quos.</p>
+			<p>As one of our core values, unwavering quality lies in everything we do. It's at the heart of the brands we work with, and it’s what brings people like you our way - a joint passion for consciously designed, beautifully crafted products made to last.</p>
 		</div>
 	</div>
 
@@ -67,7 +67,7 @@ include_once "parts/templates.php";
 			</div>
 		</div>
 	
-		<div class="col-md-9 col-sm-12">
+		<div class="col-md-9 col-sm-12 col-xs-12">
 			<div class="display-flex flex-wrap">
 				<div class="flex-stretch display-flex"> 
 				</div>

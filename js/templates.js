@@ -1,6 +1,6 @@
 
 const listItemTemplate = templater(o=>`
-<a class="col-xs-12 col-sm-4" href="product_item.php?id=${o.id}">
+<a class="col-lg-4 col-md-6 col-sm-12 col-xs-12" href="product_item.php?id=${o.id}">
 	<figure class="figure product product-zoom">
 		<img src="img/${o.thumbnail}" alt="">
 		<figcaption>

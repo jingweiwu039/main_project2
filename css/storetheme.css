@@ -286,9 +286,9 @@ a.filter-link:hover:after {
 
 
 .images-main img{
-	width: 50%;
+	
 	height:40vh;
-	margin-top:6em;
+	margin-top:3em;
 	margin-bottom: 2em;
 	object-fit: contain;
 }
@@ -390,7 +390,8 @@ a.filter-link:hover:after {
 .detail-h3 {
 	text-align: center;
 	letter-spacing: 0.2em;
-	font-weight: 400;
+	font-weight: 300;
+
 
 }
 
@@ -408,6 +409,20 @@ a.filter-link:hover:after {
 	font-weight: 400;
 }
 
+/*About*/
+
+.about-picture {
+	width: 10em;
+	height: 10vh;
+}
+
+/* Contact*/
+.contact-us {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* Button */
 .product-button-add {
 	margin-top: 2em;
@@ -421,6 +436,12 @@ a.filter-link:hover:after {
 .complete-button {
 	display: flex;
   	justify-content: center;
+}
+
+.submit-button {
+	padding-top: 2em;
+	display: flex;
+	
 }
 
 .filter-btn {
@@ -517,11 +538,15 @@ span.badge:not(:empty)::before {
 h3,
 .subtotal h5,
 .subtotal p{
-	text-align: center;
+	/*text-align: center;*/
 	font-size: 1em;
 	font-family:'Montserrat', sans-serif;
 }
 
+h3.checkout-address {
+	font-size: 1em;
+	font-family:'Montserrat', sans-serif;
+}
 .cart-name {
 	display: flex;
   	
@@ -741,7 +766,7 @@ h3,
 	.motto p {
 		font-size: 0.85em;
 	}
-	
+
 
 
 }
