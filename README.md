@@ -4,7 +4,7 @@
 
 - http://jingweiwu93.com/aau/wnm_608/
 
-- http://jingweiwu93.com/aau/wnm_608/main_project2
+- http://jingweiwu93.com/aau/wnm_608/main_project2/index.php
 
 - Styleguide page: http://jingweiwu93.com/aau/wnm_608/main_project2/styleguide/index.html
 
